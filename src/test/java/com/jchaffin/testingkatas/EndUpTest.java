@@ -34,4 +34,10 @@ public class EndUpTest {
 		assertEquals("lEET", underTest.endUp("leet"));
 	}
 
+	@Test
+	public void whenEndUpIsPassedFiveAndSixCharacterWordsItReturnsThoseWordsWithTheLastThreeCharsCapitalized() {
+		assertEquals("toWEL", underTest.endUp("towel"));
+		assertEquals("vulCAN", underTest.endUp("vulcan"));
+	}
+
 }
