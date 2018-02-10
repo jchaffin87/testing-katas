@@ -2,20 +2,31 @@ package com.jchaffin.testingkatas;
 
 import static org.junit.Assert.assertEquals;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class EndUpTest {
 
+	EndUpper underTest;
+
+	@Before
+	public void setUp() {
+		underTest = new EndUpper();
+	}
+
 	@Test
 	public void whenEndUpIsPassedLowerCaseAItReturnsUpperCaseA() {
-		EndUpper underTest = new EndUpper();
 		assertEquals("A", underTest.endUp("a"));
 	}
 
 	@Test
 	public void whenEnUpIsPassedLowerCaseBItReturnsUpperCaseB() {
-		EndUpper underTest = new EndUpper();
 		assertEquals("B", underTest.endUp("b"));
+	}
+
+	@Test
+	public void whenEndUpIsPassedLowerCaseABCItReturnsUpperCaseABC() {
+		assertEquals("ABC", underTest.endUp("abc"));
 	}
 
 }
