@@ -7,7 +7,7 @@ public class EndUpper {
 	// returns the uppercase version of a string.
 
 	public String endUp(String str) {
-		return "A";
+		return str.toUpperCase();
 	}
 
 }

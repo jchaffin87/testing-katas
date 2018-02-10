@@ -12,4 +12,10 @@ public class EndUpTest {
 		assertEquals("A", underTest.endUp("a"));
 	}
 
+	@Test
+	public void whenEnUpIsPassedLowerCaseBItReturnsUpperCaseB() {
+		EndUpper underTest = new EndUpper();
+		assertEquals("B", underTest.endUp("b"));
+	}
+
 }
