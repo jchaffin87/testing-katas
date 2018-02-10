@@ -40,4 +40,9 @@ public class EndUpTest {
 		assertEquals("vulCAN", underTest.endUp("vulcan"));
 	}
 
+	@Test
+	public void whenEndUpIsPassedEmptyStringItReturnsThatEmptyString() {
+		assertEquals("", underTest.endUp(""));
+	}
+
 }
