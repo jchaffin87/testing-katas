@@ -29,4 +29,9 @@ public class EndUpTest {
 		assertEquals("ABC", underTest.endUp("abc"));
 	}
 
+	@Test
+	public void whenEndUpIsPassedLowerCaseLeetItReturnsLeetWithLastThreeCharsInUpperCase() {
+		assertEquals("lEET", underTest.endUp("leet"));
+	}
+
 }

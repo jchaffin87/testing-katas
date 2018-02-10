@@ -7,7 +7,15 @@ public class EndUpper {
 	// returns the uppercase version of a string.
 
 	public String endUp(String str) {
+
+		if (str.length() > 3) {
+			String lastThree = str.substring(str.length() - 3, str.length());
+			String strMinusLastThree = str.substring(0, str.length() - 3);
+
+			return strMinusLastThree + lastThree.toUpperCase();
+		}
 		return str.toUpperCase();
+
 	}
 
 }
