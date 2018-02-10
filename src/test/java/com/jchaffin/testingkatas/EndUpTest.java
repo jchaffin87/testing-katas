@@ -20,7 +20,7 @@ public class EndUpTest {
 	}
 
 	@Test
-	public void whenEnUpIsPassedLowerCaseBItReturnsUpperCaseB() {
+	public void whenEndUpIsPassedLowerCaseBItReturnsUpperCaseB() {
 		assertEquals("B", underTest.endUp("b"));
 	}
 
