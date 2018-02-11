@@ -39,4 +39,9 @@ public class FrontTimesTest {
 		assertEquals("", underTest.frontTimes("A", 0));
 	}
 
+	@Test
+	public void whenFrontTimesIsPassedBAndNegativeOneItReturnsAnEmptyString() {
+		assertEquals("", underTest.frontTimes("B", -1));
+	}
+
 }
