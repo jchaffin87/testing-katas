@@ -10,6 +10,10 @@ public class FrontTimeser {
 	// Return n copies of the front;
 
 	public String frontTimes(String string, int n) {
+		if (string.length() > 3) {
+			String front = string.substring(0, 3);
+			return String.join("", Collections.nCopies(n, front));
+		}
 		return String.join("", Collections.nCopies(n, string));
 
 	}

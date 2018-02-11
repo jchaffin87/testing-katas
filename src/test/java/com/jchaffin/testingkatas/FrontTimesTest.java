@@ -18,4 +18,10 @@ public class FrontTimesTest {
 		assertEquals("BB", underTest.frontTimes("B", 2));
 	}
 
+	@Test
+	public void whenFrontTimesIsPassedABCDAndThreeItReturnsABCABCABC() {
+		FrontTimeser underTest = new FrontTimeser();
+		assertEquals("ABCABCABC", underTest.frontTimes("ABCD", 3));
+	}
+
 }
