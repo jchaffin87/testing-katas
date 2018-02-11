@@ -7,9 +7,15 @@ import org.junit.Test;
 public class FrontTimesTest {
 
 	@Test
-	public void whenFrontTimesIsPassedAItReturnsAAA() {
+	public void whenFrontTimesIsPassedAnAAndAThreeItReturnsAAA() {
 		FrontTimeser underTest = new FrontTimeser();
 		assertEquals("AAA", underTest.frontTimes("A", 3));
+	}
+
+	@Test
+	public void whenFrontTimesIsPassedBAndTwoItReturnsBB() {
+		FrontTimeser underTest = new FrontTimeser();
+		assertEquals("BB", underTest.frontTimes("B", 2));
 	}
 
 }
