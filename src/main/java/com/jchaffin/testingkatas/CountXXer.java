@@ -8,7 +8,7 @@ public class CountXXer {
 	public int countXX(String str) {
 		int count = 0;
 		for (int i = 0; i < str.length() - 1; i++) {
-			if (str.substring(i, i + 1).equals("x") && str.substring(i + 1, i + 2).equals("x")) {
+			if (str.substring(i, i + 1).equalsIgnoreCase("x") && str.substring(i + 1, i + 2).equalsIgnoreCase("x")) {
 				count++;
 			}
 		}
