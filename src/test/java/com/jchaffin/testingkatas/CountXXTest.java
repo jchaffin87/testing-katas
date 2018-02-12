@@ -29,4 +29,14 @@ public class CountXXTest {
 		assertEquals(1, underTest.countXX("XxABCD"));
 	}
 
+	@Test
+	public void whenCountXXIsPassedABXxXCDXxItReturnsThree() {
+		assertEquals(3, underTest.countXX("ABXxXCDXx"));
+	}
+
+	@Test
+	public void whenCountXXIsPassedEmptyStringItReturnsZero() {
+		assertEquals(0, underTest.countXX(""));
+	}
+
 }
