@@ -15,7 +15,13 @@ public class StringBitsTest {
 	@Test
 	public void stringBitsReturnsHiWHenPassedHi() {
 		StringBits underTest = new StringBits();
-		assertEquals("Hi", underTest.stringBits("Hi"));
+		assertEquals("H", underTest.stringBits("Hi"));
+	}
+
+	@Test
+	public void stringBitsReturnsACEWHenPassedABCDE() {
+		StringBits underTest = new StringBits();
+		assertEquals("ACE", underTest.stringBits("ABCDE"));
 	}
 
 }
