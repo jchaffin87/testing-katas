@@ -12,4 +12,10 @@ public class StringBitsTest {
 		assertEquals("H", underTest.stringBits("H"));
 	}
 
+	@Test
+	public void stringBitsReturnsHiWHenPassedHi() {
+		StringBits underTest = new StringBits();
+		assertEquals("Hi", underTest.stringBits("Hi"));
+	}
+
 }
