@@ -8,9 +8,12 @@ public class StringSplosion {
 	// so on until you reach the second from last, then repeat the string.
 
 	public String stringSplosion(String startingString) {
-		String newString = startingString.substring(0, 1);
+		String newString = "";
 		if (startingString.length() > 1) {
-			return newString + startingString;
+			for (int i = 0; i <= startingString.length(); i++) {
+				newString = newString + startingString.substring(0, i);
+			}
+			return newString;
 		} else {
 			return startingString;
 		}
