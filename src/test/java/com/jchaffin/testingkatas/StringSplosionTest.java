@@ -24,4 +24,16 @@ public class StringSplosionTest {
 		assertEquals("AABABC", underTest.stringSplosion("ABC"));
 	}
 
+	@Test
+	public void stringSplosionReturnsCCoCodCodeWhenPassedCode() {
+		StringSplosion underTest = new StringSplosion();
+		assertEquals("CCoCodCode", underTest.stringSplosion("Code"));
+	}
+
+	@Test
+	public void stringSplosionReturnsKKiKitKittKitteKittenWhenPassedKitten() {
+		StringSplosion underTest = new StringSplosion();
+		assertEquals("KKiKitKittKitteKitten", underTest.stringSplosion("Kitten"));
+	}
+
 }
