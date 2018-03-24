@@ -23,4 +23,14 @@ public class LastTwoTest {
 	public void lastTwoReturnsOneWhenPassedABAB() {
 		assertEquals(1, underTest.lastTwo("ABAB"));
 	}
+
+	@Test
+	public void lastTwoReturnsTwoWhenPassedHiXXXHiXXHi() {
+		assertEquals(2, underTest.lastTwo("HiXXXHiXXHi"));
+	}
+
+	@Test
+	public void lastTwoReturnsTwoWhenPassedXXXX() {
+		assertEquals(2, underTest.lastTwo("XXXX"));
+	}
 }
