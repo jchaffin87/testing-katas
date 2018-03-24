@@ -10,7 +10,18 @@ public class LastTwo {
 	// appears in str.
 
 	public int lastTwo(String str) {
-		return 0;
+		if (str.length() < 2) {
+			return 0;
+		} else {
+			String lastTwoLetters = str.substring(str.length() - 2);
+			int count = 0;
+			for (int i = 0; i < str.length() - 2; i++) {
+				String check = str.substring(i, i + 2);
+				if (check.equals(lastTwoLetters)) {
+					count++;
+				}
+			}
+			return count;
+		}
 	}
-
 }

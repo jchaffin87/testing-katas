@@ -19,4 +19,8 @@ public class LastTwoTest {
 		assertEquals(0, underTest.lastTwo("A"));
 	}
 
+	@Test
+	public void lastTwoReturnsOneWhenPassedABAB() {
+		assertEquals(1, underTest.lastTwo("ABAB"));
+	}
 }
