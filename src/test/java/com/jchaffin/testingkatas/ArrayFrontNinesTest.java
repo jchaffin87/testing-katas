@@ -15,9 +15,15 @@ public class ArrayFrontNinesTest {
 	}
 
 	@Test
-	public void test() {
+	public void arrayFrontNinesReturnsTrueWhenPassedAnArrayContainingOneOneOneAndNine() {
 		int[] nums = { 1, 1, 1, 9 };
 		assertEquals(true, underTest.arrayFrontNines(nums));
+	}
+
+	@Test
+	public void arrayFrontNinesReturnsFalseWhenPassedAnArrayContainingOneOneOneAndOne() {
+		int[] nums = { 1, 1, 1, 1 };
+		assertEquals(false, underTest.arrayFrontNines(nums));
 	}
 
 }
