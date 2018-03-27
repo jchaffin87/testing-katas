@@ -20,4 +20,10 @@ public class ArrayCountNinesTest {
 		assertEquals(1, underTest.arrayCountNines(nums));
 	}
 
+	@Test
+	public void ArrayCountNinesReturnsOneWhenPassedAnArrayContaining99and1() {
+		int[] nums = { 9, 9, 1 };
+		assertEquals(2, underTest.arrayCountNines(nums));
+	}
+
 }
