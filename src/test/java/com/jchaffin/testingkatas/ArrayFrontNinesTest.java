@@ -32,4 +32,10 @@ public class ArrayFrontNinesTest {
 		assertEquals(false, underTest.arrayFrontNines(nums));
 	}
 
+	@Test
+	public void arrayFrontNinesReturnsFalseWhenPassedAnArrayContainingOneOneOneOneAndNine() {
+		int[] nums = { 1, 1, 1, 1, 9 };
+		assertEquals(false, underTest.arrayFrontNines(nums));
+	}
+
 }
