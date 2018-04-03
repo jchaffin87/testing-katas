@@ -38,4 +38,10 @@ public class ArrayFrontNinesTest {
 		assertEquals(false, underTest.arrayFrontNines(nums));
 	}
 
+	@Test
+	public void arrayFrontNinesReturnsFalseWhenPassedAnEmpty() {
+		int[] nums = {};
+		assertEquals(false, underTest.arrayFrontNines(nums));
+	}
+
 }
