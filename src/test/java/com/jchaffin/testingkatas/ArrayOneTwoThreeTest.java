@@ -20,4 +20,10 @@ public class ArrayOneTwoThreeTest {
 		assertEquals(false, underTest.arrayOneTwoThree(nums));
 	}
 
+	@Test
+	public void arrayOneTwoThreeReturnsTrueWhenPassedAnArrayContainingOneTwoThree() {
+		int[] nums = { 1, 2, 3 };
+		assertEquals(true, underTest.arrayOneTwoThree(nums));
+	}
+
 }
