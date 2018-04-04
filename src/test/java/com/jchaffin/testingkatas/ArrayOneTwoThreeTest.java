@@ -26,4 +26,22 @@ public class ArrayOneTwoThreeTest {
 		assertEquals(true, underTest.arrayOneTwoThree(nums));
 	}
 
+	@Test
+	public void arrayOneTwoThreeReturnsTrueWhenPassedAnArrayContainingOneOneTwoThree() {
+		int[] nums = { 1, 1, 2, 3 };
+		assertEquals(true, underTest.arrayOneTwoThree(nums));
+	}
+
+	@Test
+	public void arrayOneTwoThreeReturnsTrueWhenPassedAnArrayContainingOneTwoThreeOne() {
+		int[] nums = { 1, 2, 3, 1 };
+		assertEquals(true, underTest.arrayOneTwoThree(nums));
+	}
+
+	@Test
+	public void arrayOneTwoThreeReturnsFalseWhenPassedAnEmptyArray() {
+		int[] nums = {};
+		assertEquals(false, underTest.arrayOneTwoThree(nums));
+	}
+
 }
