@@ -19,4 +19,9 @@ public class StringMatchTest {
 		assertEquals(1, underTest.stringMatch("he", "he"));
 	}
 
+	@Test
+	public void stringMatchReturnsTwoWhenPassedHeHeAndHeHe() {
+		assertEquals(2, underTest.stringMatch("hehe", "hehe"));
+	}
+
 }
