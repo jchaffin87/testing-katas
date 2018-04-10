@@ -9,14 +9,17 @@ public class StringMatch {
 
 	public int stringMatch(String stringA, String stringB) {
 		int matches = 0;
+		String subOfA = "";
+		String subOfB = "";
 		for (int i = 0; i <= stringA.length() - 1; i++) {
-			String subOfA = stringA.substring(i, i++);
-			String subOfB = stringB.substring(i, i++);
+			subOfA = stringA.substring(i, i++);
+		}
+		for (int i = 0; i <= stringB.length() - 1; i++) {
+			subOfB = stringB.substring(i, i++);
 			if (subOfA.equals(subOfB)) {
 				matches++;
 			}
 		}
-
 		return matches;
 	}
 
