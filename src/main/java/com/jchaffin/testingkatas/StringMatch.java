@@ -13,10 +13,13 @@ public class StringMatch {
 		String subOfB = "";
 		for (int i = 0; i <= stringA.length() - 1; i++) {
 			subOfA = stringA.substring(i, i++);
+			if (subOfA.equals(subOfB) && stringA.length() <= stringB.length()) {
+				matches++;
+			}
 		}
 		for (int i = 0; i <= stringB.length() - 1; i++) {
 			subOfB = stringB.substring(i, i++);
-			if (subOfA.equals(subOfB)) {
+			if (subOfA.equals(subOfB) && stringA.length() > stringB.length()) {
 				matches++;
 			}
 		}

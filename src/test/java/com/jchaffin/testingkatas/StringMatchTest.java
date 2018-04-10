@@ -29,4 +29,9 @@ public class StringMatchTest {
 		assertEquals(3, underTest.stringMatch("XXCAAZZ", "XXBAAZ"));
 	}
 
+	@Test
+	public void stringMatchReturnsThreeWhenPassedXXBAAZAndXXCAAZZ() {
+		assertEquals(3, underTest.stringMatch("XXBAAZ", "XXCAAZZ"));
+	}
+
 }
