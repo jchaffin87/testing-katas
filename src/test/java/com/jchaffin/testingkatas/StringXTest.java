@@ -29,4 +29,9 @@ public class StringXTest {
 		assertEquals("XX", underTest.removeXs("XXX"));
 	}
 
+	@Test
+	public void removeXsMethodReturnsABCDWhenPassedABXXXCD() {
+		assertEquals("ABCD", underTest.removeXs("ABXXXCD"));
+	}
+
 }
