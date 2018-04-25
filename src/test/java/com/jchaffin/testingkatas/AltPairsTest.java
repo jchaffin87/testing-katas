@@ -19,4 +19,14 @@ public class AltPairsTest {
 		assertEquals("", underTest.removePairs(""));
 	}
 
+	@Test
+	public void removePairsReturnsHIWhenPassedHIGH() {
+		assertEquals("HI", underTest.removePairs("HIGH"));
+	}
+
+	@Test
+	public void removePairsReturnsAWhenPassedA() {
+		assertEquals("A", underTest.removePairs("A"));
+	}
+
 }
