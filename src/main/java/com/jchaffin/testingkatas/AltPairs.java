@@ -6,10 +6,14 @@ public class AltPairs {
 	// ... so "kittens" yields "kien".
 
 	public String removePairs(String str) {
+		String result = "";
 		if (!str.isEmpty() && str.length() >= 2) {
-			return str.substring(0, 2);
+			for (int i = 0; i <= str.length() - 3; i = i + 3) {
+				result = result + str.substring(i, i + 2);
+			}
 		} else {
-			return str;
+			result = str;
 		}
+		return result;
 	}
 }

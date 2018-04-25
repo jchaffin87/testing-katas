@@ -29,4 +29,9 @@ public class AltPairsTest {
 		assertEquals("A", underTest.removePairs("A"));
 	}
 
+	@Test
+	public void removePairsReturnsKIENWhenPassedKITTENS() {
+		assertEquals("KIEN", underTest.removePairs("KITTENS"));
+	}
+
 }
