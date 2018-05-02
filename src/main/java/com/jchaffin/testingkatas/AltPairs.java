@@ -8,8 +8,12 @@ public class AltPairs {
 	public String removePairs(String str) {
 		String result = "";
 		if (!str.isEmpty() && str.length() >= 2) {
-			for (int i = 0; i <= str.length() - 3; i = i + 3) {
-				result = result + str.substring(i, i + 2);
+			for (int i = 0; i <= str.length(); i += 4) {
+				int end = i + 2;
+				if (end > str.length()) {
+					end = str.length();
+				}
+				result = result + str.substring(i, end);
 			}
 		} else {
 			result = str;
