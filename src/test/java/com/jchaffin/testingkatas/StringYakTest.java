@@ -16,7 +16,22 @@ public class StringYakTest {
 
 	@Test
 	public void removeYakReturnsXWhenPassedX() {
-		assertEquals("X", underTest.removeYak("X"));
+		assertEquals("x", underTest.removeYak("x"));
+	}
+
+	@Test
+	public void removeYakReturnsXWhenPassedXYAK() {
+		assertEquals("x", underTest.removeYak("xyak"));
+	}
+
+	@Test
+	public void removeYakReturnsXWhenPassedXYBK() {
+		assertEquals("x", underTest.removeYak("xybk"));
+	}
+
+	@Test
+	public void removeYakReturnsEmptyStringWhenPassedEmptyString() {
+		assertEquals("", underTest.removeYak(""));
 	}
 
 }
