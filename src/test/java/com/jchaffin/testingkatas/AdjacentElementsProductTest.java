@@ -20,4 +20,10 @@ public class AdjacentElementsProductTest {
 		assertEquals(4, underTest.findMaxAdjacentElementsProduct(inputArray));
 	}
 
+	@Test
+	public void findMaxAdjacentElementsProductReturnsSixWhenPassedAnArrayContainingThreeAndTwo() {
+		int[] inputArray = { 3, 2 };
+		assertEquals(6, underTest.findMaxAdjacentElementsProduct(inputArray));
+	}
+
 }
