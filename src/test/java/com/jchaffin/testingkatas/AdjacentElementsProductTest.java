@@ -26,4 +26,10 @@ public class AdjacentElementsProductTest {
 		assertEquals(6, underTest.findMaxAdjacentElementsProduct(inputArray));
 	}
 
+	@Test
+	public void findMaxAdjacentElementsProductReturnsEightWhenPassedAnArrayContainingFourTwoAndEight() {
+		int[] inputArray = { 4, 2, 8 };
+		assertEquals(16, underTest.findMaxAdjacentElementsProduct(inputArray));
+	}
+
 }
