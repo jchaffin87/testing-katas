@@ -32,4 +32,10 @@ public class AdjacentElementsProductTest {
 		assertEquals(16, underTest.findMaxAdjacentElementsProduct(inputArray));
 	}
 
+	@Test
+	public void findMaxAdjacentElementsProductReturnsNegativeTwelveWhenPassedAnArrayContainingNegTwentyThreeFourNegThreeEightAndNegTwelve() {
+		int[] inputArray = { -23, 4, -3, 8, -12 };
+		assertEquals(-12, underTest.findMaxAdjacentElementsProduct(inputArray));
+	}
+
 }
