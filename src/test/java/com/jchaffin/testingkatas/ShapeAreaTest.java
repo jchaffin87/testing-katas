@@ -15,8 +15,12 @@ public class ShapeAreaTest {
 	}
 
 	@Test
-	public void test() {
+	public void findShapeAreaReturnsOneWhenPassedOne() {
 		assertEquals(1, underTest.findShapeArea(1));
 	}
 
+	@Test
+	public void findShapeAreaReturnsFiveWhenPassedTwo() {
+		assertEquals(5, underTest.findShapeArea(2));
+	}
 }
